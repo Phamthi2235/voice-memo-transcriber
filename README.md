@@ -36,45 +36,57 @@ A **free, open-source Chrome extension** that adds a "Transcript" button to ever
 
 ## 🚀 Quick Start
 
-Getting started takes less than 2 minutes:
+Getting started takes less than 2 minutes. No coding or technical knowledge needed!
 
-### 1. Install the Extension
+### Step 1: Download the Extension
 
-```
-1. Download this repository (Code → Download ZIP → extract)
-2. Open chrome://extensions/ in Chrome
-3. Enable "Developer mode" (top right toggle)
-4. Click "Load unpacked" and select the extracted folder
-```
+<p align="center">
+  <a href="https://github.com/JSvandijk/voice-memo-transcriber/archive/refs/heads/master.zip">
+    <img src="https://img.shields.io/badge/⬇️_Download_ZIP-blue?style=for-the-badge&logoColor=white" alt="Download ZIP" height="40">
+  </a>
+</p>
 
-### 2. Get Your Free API Key
+1. Click the **Download** button above (or [click here](https://github.com/JSvandijk/voice-memo-transcriber/archive/refs/heads/master.zip))
+2. A `.zip` file will download to your computer
+3. **Extract/unzip** the folder (right-click → "Extract All" on Windows, double-click on Mac)
+4. Remember where you saved the extracted folder — you'll need it in the next step
 
-> **You need a Groq API key** (free, takes 30 seconds):
+### Step 2: Add it to Chrome
 
-```
-1. Go to https://console.groq.com/keys
-2. Create a free account (or sign in with Google/GitHub)
-3. Click "Create API Key"
-4. Copy the key (starts with gsk_...)
-```
+1. Open Google Chrome
+2. Type `chrome://extensions` in the address bar and press Enter
+3. In the top-right corner, flip the **"Developer mode"** toggle to ON
+4. Click the **"Load unpacked"** button that appears
+5. Navigate to the folder you just extracted and select it
+6. The extension is now installed! You should see it in your toolbar
 
-### 3. Activate the Extension
+> **💡 Can't see the icon?** Click the puzzle piece icon 🧩 in Chrome's toolbar, then pin "Voice Memo Transcriber" so it's always visible.
 
-```
-1. Click the Voice Memo Transcriber icon in your Chrome toolbar
-2. Paste your API key
-3. Click "Save"
-4. The status dot turns green — you're ready! ✅
-```
+### Step 3: Get Your Free API Key
 
-### 4. Start Transcribing
+The extension uses [Groq](https://groq.com) for transcription — it's **completely free** for personal use.
 
-```
-1. Open WhatsApp Web (web.whatsapp.com) or Messenger (messenger.com)
-2. Find any voice memo
-3. Click the "Transcript" button that appears
-4. Done — read the transcription instantly! 🎉
-```
+1. Go to **[console.groq.com/keys](https://console.groq.com/keys)**
+2. Create a free account (you can sign in with your Google account)
+3. Click **"Create API Key"**
+4. Give it any name (e.g., "voice transcriber")
+5. **Copy the key** — it looks like `gsk_abc123...`
+
+> **ℹ️ What is Groq?** Groq is an AI company that provides free access to advanced speech-to-text models. Your voice memos are processed by their servers and immediately discarded — nothing is stored.
+
+### Step 4: Activate the Extension
+
+1. Click the **Voice Memo Transcriber icon** in your Chrome toolbar (the purple microphone 🎤)
+2. Paste your API key into the input field
+3. Click **"Save"**
+4. The dot turns **green** — you're all set! ✅
+
+### Step 5: Start Transcribing!
+
+1. Open **[WhatsApp Web](https://web.whatsapp.com)** or **[Messenger](https://www.messenger.com)**
+2. Find any voice memo in a chat
+3. You'll see a **"Transcript"** button next to it
+4. Click it and watch the magic happen! 🎉
 
 ---
 
