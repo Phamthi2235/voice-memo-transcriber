@@ -1,0 +1,14 @@
+# Backup files
+*.bak
+*.backup
+
+# Development notes (contain local paths)
+CLAUDE.md
+PROJECT_CONTEXT.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env

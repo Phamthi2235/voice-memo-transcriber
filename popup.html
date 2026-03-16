@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 16px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header .emoji { font-size: 22px; }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .status.ok { background: rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.3); }
+    .status.missing { background: rgba(251, 146, 60, 0.1); border: 1px solid rgba(251, 146, 60, 0.3); }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot.green { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
+    .dot.orange { background: #fb923c; box-shadow: 0 0 6px #fb923c; }
+    label {
+      display: block;
+      font-size: 12px;
+      color: #a0a0b0;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #0f0f23;
+      color: #e0e0e0;
+      font-size: 13px;
+      font-family: 'SF Mono', 'Consolas', monospace;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus { border-color: #a78bfa; }
+    input::placeholder { color: #555; }
+    button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: linear-gradient(135deg, #7c3aed, #db2777);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    button:hover { opacity: 0.9; }
+    .help {
+      margin-top: 14px;
+      font-size: 11px;
+      color: #666;
+      text-align: center;
+    }
+    .help a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    .help a:hover { text-decoration: underline; }
+    .saved {
+      text-align: center;
+      color: #4ade80;
+      font-size: 13px;
+      margin-top: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .saved.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="emoji">🎤</span>
+    <h1>Voice Memo Transcriber</h1>
+  </div>
+
+  <div id="status" class="status missing">
+    <span id="dot" class="dot orange"></span>
+    <span id="statusText">No API key set</span>
+  </div>
+
+  <label>Groq API Key</label>
+  <input type="password" id="apiKey" placeholder="gsk_..." spellcheck="false">
+
+  <button id="save">Save</button>
+  <div id="saved" class="saved">✓ Saved!</div>
+
+  <div class="help">
+    Works on WhatsApp Web & Messenger<br>
+    No key yet? <a href="https://console.groq.com/keys" target="_blank">Get one free at groq.com</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

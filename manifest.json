@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Memo Transcriber",
+  "version": "3.0",
+  "description": "Automatically transcribe WhatsApp & Messenger voice memos with Groq Whisper — no server needed!",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.groq.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.messenger.com/*", "https://web.whatsapp.com/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": ["https://www.messenger.com/*", "https://web.whatsapp.com/*"],
+      "js": ["interceptor.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
